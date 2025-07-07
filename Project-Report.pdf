@@ -1,0 +1,96 @@
+🏥 Project Report: Healthcare Analytics
+
+1. Project Overview
+
+This project performs a comprehensive analysis of healthcare data to uncover patterns and trends related to patient outcomes, hospital performance, and disease prevalence. It aims to generate actionable insights for healthcare providers and stakeholders to optimize clinical processes and improve patient care.
+
+2. Data Description
+
+Source: Publicly available healthcare dataset (e.g., patient records, treatment outcomes, demographics, etc.).
+
+Key Variables:
+
+Patient demographics (age, gender, location)
+Diagnosis and treatment details
+Outcome metrics (e.g., recovery time, readmission, mortality)
+Hospital-related attributes (department, length of stay, costs)
+
+3. Data Cleaning & Exploration
+
+Missing Values: Identified and imputed missing entries using appropriate strategies (mean imputation for numeric, mode for categorical).
+Outliers Handling: Detected anomalies via IQR method and either removed or transformed them.
+Duplicates: Removed duplicated patient or record entries.
+
+Exploratory Data Analysis (EDA):
+Distribution analysis of demographic variables
+Correlation heatmaps for numeric health indicators
+Aggregated statistics (mean length of stay, readmission rates by age group)
+
+4. Feature Engineering
+
+Created new variables to enhance predictive modeling:
+Age groups (e.g., 0–18, 19–40, 41–65, 66+)
+Readmission flags (binary)
+Cost per day (total cost divided by length of stay)
+Comorbidity count (number of co-existing conditions)
+
+5. Modeling & Analysis
+
+Applied machine learning algorithms to predict key outcomes:
+
+Model	Purpose	Metrics
+Logistic Regression	Predict patient readmission risk	Accuracy, AUC
+Random Forest	Capture complex patterns	Precision, Recall
+XGBoost	Boosted-tree model for high accuracy	F1-score, AUC
+
+Model Evaluation:
+
+80/20 train-test split
+Cross-validation for performance stability
+ROC curves and confusion matrices visualized
+
+6. Key Findings & Insights
+
+Certain age groups and comorbidities significantly increased readmission risk.
+Hospitals with shorter average length of stay had lower cost-per-day but occasionally higher readmission rates.
+Model comparisons showed XGBoost delivered the best balance with an AUC of ~0.88, outperforming Logistic Regression (~0.82) and Random Forest (~0.85).
+
+7. Workflow Summary
+
+Data Loading – Import CSV into Pandas DataFrame
+Preprocessing – Clean, impute, and transform raw data
+EDA – Visualize trends and correlations
+Feature Engineering – Derive meaningful predictive variables
+Model Training – Train and validate three ML models
+Evaluation – Assess performance using metrics and plots
+Interpretation – Extract actionable insights for stakeholders
+
+✅ How to Run This Project
+
+Clone the repo:
+
+bash
+Copy
+Edit
+git clone https://github.com/Anas8904/Healthcare_Analytics.git
+
+Navigate to folder:
+
+bash
+Copy
+Edit
+cd Healthcare_Analytics
+
+Launch Jupyter Notebook:
+
+bash
+Copy
+Edit
+jupyter notebook Healthcare_Analytics.ipynb
+
+Run all cells step-by-step to:
+
+Clean and preprocess the data
+Explore data visually
+Train and evaluate ML models
+Review final insights and visual outputs
