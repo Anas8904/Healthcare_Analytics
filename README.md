@@ -1,6 +1,6 @@
 # Healthcare-Analytics
 Contents of Repository:
-- Python Notebook file contains project code for Data Exploration, Feature Engineering, and Machine Learning models (Naive Bayes, XGBoost, Neural Networks).
+- Python Notebook file contains project code for Data Exploration, Feature Engineering, and Machine Learning models (Naive Bayes, XGBoost)
 - TXT Report file contains overview of the project, predicitions and results.
 - Datasets.zip contains both the test and train data used in the project.
 - HTML file is a markdown of the jupyter notebook with alll the outputs to View without python or its IDE.
@@ -19,5 +19,4 @@ Hospital admission data was analyzed to accurately predict the patient’s Lengt
 
 -	An ensemble method XGBoost which was predicting with an accuracy of 43.05%.
 
--	A dense neural network with 6 layers which yields an accuracy of 42.5%.
 
